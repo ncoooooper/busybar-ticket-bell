@@ -39,6 +39,9 @@ def visible(html,scope,labels):
     return any(c["enabled"] and (normalize(" ".join(c["text"])) in expected or
                any(normalize(s) in expected for s in c["text"] if s.strip())) for c in doc.controls)
 def snapshot(o,m):
+    if o.get("mode") == "watchlist":
+        from live import reading
+        return reading(o,m)
     url=o["url"]
     if urlsplit(url).scheme not in ("http","https"):raise ValueError("Use an HTTP(S) sale URL")
     request=urllib.request.Request(url,headers={"User-Agent":"BusyBar-TicketBell/1.0"})

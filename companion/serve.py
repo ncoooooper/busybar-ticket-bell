@@ -5,7 +5,6 @@ import threading
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-import source
 
 def page(caption,value,*lines,fraction=None):
     obj=dict(caption=str(caption),value=str(value),lines=[str(s) for s in lines])
@@ -13,6 +12,7 @@ def page(caption,value,*lines,fraction=None):
     return obj
 
 def run():
+    import source
     p=argparse.ArgumentParser(description=source.__doc__)
     p.add_argument("--config",type=Path,help="Path to your instrument JSON configuration")
     p.add_argument("--host",default="127.0.0.1");p.add_argument("--port",type=int,default=8770)

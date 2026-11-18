@@ -1,0 +1,19 @@
+{
+  "app": "ticket-bell",
+  "frames": [
+    6,
+    7
+  ],
+  "firmware": "1.3.1",
+  "inputs": [
+    [
+      "up"
+    ],
+    [
+      "down"
+    ]
+  ],
+  "source": "Recorded source response",
+  "exit": "finished",
+  "sha256": "5336dc22e64650ae84f5db5d6059c166518c902a38f878cf61736917b30ace31"
+}

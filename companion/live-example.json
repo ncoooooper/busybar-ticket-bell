@@ -1,0 +1,18 @@
+{
+  "mode": "watchlist",
+  "history_file": "state.json",
+  "items": [
+    {
+      "name": "Game",
+      "currency": "USD",
+      "limit": 20,
+      "url": "http://127.0.0.1:8780/game.json",
+      "price_path": "offer.price"
+    },
+    {
+      "name": "Limited reward",
+      "url": "http://127.0.0.1:8780/reward.json",
+      "stock_path": "remaining"
+    }
+  ]
+}

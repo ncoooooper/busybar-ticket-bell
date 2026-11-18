@@ -3,7 +3,7 @@ import {loadValues} from "./settings";
 
 export type InstrumentOptions={title:string;primary:string;accent:string;cadence:number;motion:MotionOptions;setup:string};
 type Page={caption:string;value:string;lines:string[];fraction?:number};
-type Reading={pages:Page[];state:string;key:string;alert?:boolean;error?:string};
+type Reading={pages:Page[];state:string;key:string;alert?:boolean;focus?:number;error?:string};
 
 export function instrument(config:InstrumentOptions){
  let address="",page=0,last:Reading|null=null,error="",loading=false,closed=false,pinned=false;
@@ -31,6 +31,7 @@ export function instrument(config:InstrumentOptions){
     if(data.error)throw Error(data.error);
     if(!Array.isArray(data.pages)||!data.pages.length||data.pages.length>40||!data.pages.every(p=>typeof p.value==="string"&&typeof p.caption==="string"&&Array.isArray(p.lines)&&p.lines.every(s=>typeof s==="string")))throw Error("Invalid reading");
     const changed=last!==null&&last.key!==data.key;last=data;error="";page=Math.min(page,data.pages.length-1);
+    if(data.alert&&!pinned&&typeof data.focus==="number")page=Math.max(0,Math.min(data.focus,data.pages.length-1));
     if(!closed)refresh(changed?(data.alert?"success":"change"):undefined);
   }catch(e){error=String(e);if(!closed)refresh();}
   finally{loading=false;if(!closed)timer=setTimeout(()=>{timer=undefined;void pull();},Math.max(1500,config.cadence)*(error?2:1));}
