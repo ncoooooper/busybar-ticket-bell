@@ -1,7 +1,7 @@
 {
   "name": "busybar-ticket-bell",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Watch a specific ticket page and signal the transition to an enabled purchase control.",
   "author": "ncoooooper",
   "type": "module",

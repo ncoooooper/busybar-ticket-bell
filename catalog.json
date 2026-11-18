@@ -2,5 +2,5 @@
   "category": "utilities",
   "short_description": "Watch a specific ticket page and signal the transition to an enabled purchase control.",
   "description": "Watch product prices and limited-stock rewards, or wait for a ticket purchase link to open. Watch a specific ticket page and signal the transition to an enabled purchase control. Run the companion with a JSON configuration containing url, name, labels (exact visible button labels), and optionally scope_id (the event section ID). It checks only this public page once a minute and never places an order. Markup must expose an enabled link or button in the HTML response. A browser-rendered sale with no server-side control needs an official feed or a different page. The first observation establishes the initial state.",
-  "changelog": "Add watchlist limits, observed lows and remaining reward counts."
+  "changelog": "New screen transitions and high-contrast LED previews."
 }

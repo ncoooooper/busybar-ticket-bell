@@ -4,6 +4,32 @@ Watch product prices and limited-stock rewards, or wait for a ticket purchase li
 
 Use the bar when two performances share a ticketing page and only one is yours. Selecting the event section keeps an on-sale button for a different performance from lighting up your desk.
 
+## Screen transitions
+
+Move between the performance and its sale status. The short highlight marks which reading is on screen.
+
+![Ticket Bell front display. Move between the performance and its sale status. The short highlight marks which reading is on screen.](media/guide/screen-transitions.gif)
+
+<details>
+
+<summary>Watch the rear display</summary>
+
+![Ticket Bell rear display during the recorded controls](media/guide/screen-transitions-rear.gif)
+
+</details>
+
+Browse the price crossing its limit and the reported stock left for a separate offer.
+
+![Ticket Bell front display. Browse the price crossing its limit and the reported stock left for a separate offer.](media/guide/screen-transitions-connected.gif)
+
+<details>
+
+<summary>Watch the rear display in connected mode</summary>
+
+![Ticket Bell rear display during the recorded controls](media/guide/screen-transitions-connected-rear.gif)
+
+</details>
+
 ## Watch the performance you want
 
 1. Open the public event detail page. Put its URL, event name and exact purchase-button text in the companion configuration.
@@ -42,7 +68,7 @@ Open BUSY Bar Emulator. From this repository, run:
 
 Press **Back** to exit.
 
-The GIFs are excerpts from the emulator recording. Each front-display pixel is shown at 9× its original width and height. The end frames pause for reading.
+The GIFs are excerpts from the emulator recording. Each LED occupies a 16 × 16 cell with a black border. The end frames pause for reading.
 
 [Full recording](media/controls.mp4) · [Rear display](screenshots/back-1.png) · [Firmware test](EMULATOR-QA.md) · [MIT license](LICENSE)
 
@@ -81,4 +107,4 @@ Select a reward tier or product whose source exposes a numeric remaining quantit
 
 ![A four-unit reward page gives way to the game price.](media/guide/use-2.gif)
 
-The recordings use example responses on emulator firmware. Each display pixel is enlarged to a 9 × 9 square.
+The recordings use example responses on emulator firmware. Each LED occupies a 16 × 16 cell with a black border.

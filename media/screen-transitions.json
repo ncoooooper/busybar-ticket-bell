@@ -1,0 +1,75 @@
+{
+  "app": "busybar-ticket-bell",
+  "sha256": "5f41e781f197808df70909b79c3af72480040c32620f4f1ca22b453dcb310d1a",
+  "firmware": "1.3.1",
+  "cell": 16,
+  "lit": 14,
+  "front": [
+    72,
+    16
+  ],
+  "rear": [
+    160,
+    80
+  ],
+  "captures": [
+    {
+      "mode": "classic",
+      "guides": [
+        "check-opening-count",
+        "watch-box-office"
+      ],
+      "tour": "screen-transitions",
+      "input": [
+        [
+          "up"
+        ],
+        [
+          "down",
+          "ok"
+        ],
+        [
+          "down",
+          "up",
+          "ok"
+        ]
+      ],
+      "distinct_frames": [
+        9,
+        8,
+        31
+      ],
+      "rear_frames": 15,
+      "rear_tour": "screen-transitions-rear",
+      "exit": "finished"
+    },
+    {
+      "mode": "extended",
+      "guides": [
+        "use-1",
+        "use-2"
+      ],
+      "tour": "screen-transitions-connected",
+      "input": [
+        [
+          "up"
+        ],
+        [
+          "down"
+        ],
+        [
+          "down",
+          "up"
+        ]
+      ],
+      "distinct_frames": [
+        7,
+        8,
+        26
+      ],
+      "rear_frames": 15,
+      "rear_tour": "screen-transitions-connected-rear",
+      "exit": "finished"
+    }
+  ]
+}
