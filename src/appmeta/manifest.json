@@ -4,6 +4,6 @@
   "name": "Ticket Bell",
   "version": "0.1.0",
   "api_version": "27.12.0",
-  "description": "Ticket Bell",
+  "description": "Watch a specific ticket page and signal the transition to an enabled purchase control.",
   "author": "ncoooooper"
 }

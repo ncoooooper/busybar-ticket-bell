@@ -1,0 +1,42 @@
+{
+  "id": "BB-012",
+  "source": "Local HTML ticket page served over HTTP.",
+  "scenario": "An initially disabled purchase button became enabled. The companion parsed the exact configured event section and the firmware displayed OPEN.",
+  "keys": [
+    "up",
+    "down",
+    "ok"
+  ],
+  "frames": 54,
+  "distinct_frames": 14,
+  "exit": "App io.ncoooooper.ticketbell exited: finished; heap peak 82.0 of 128 KiB",
+  "sha256": "fd7304027a72f40945902e677fb3b6b4551ad3e7bb1827a190590c9f3b6f2211",
+  "pages": [
+    {
+      "caption": "BOX OFFICE",
+      "value": "OPEN",
+      "lines": [
+        "Actionable purchase link",
+        "Evening show"
+      ],
+      "fraction": 1
+    },
+    {
+      "caption": "OPENINGS",
+      "value": "1",
+      "lines": [
+        "Last change: 02:12",
+        "Checks every 60 seconds"
+      ]
+    }
+  ],
+  "initial": {
+    "caption": "BOX OFFICE",
+    "value": "WAIT",
+    "lines": [
+      "No active purchase link",
+      "Evening show"
+    ],
+    "fraction": 0
+  }
+}
