@@ -10,7 +10,7 @@
   "frames": 54,
   "distinct_frames": 14,
   "exit": "App io.ncoooooper.ticketbell exited: finished; heap peak 82.0 of 128 KiB",
-  "sha256": "fd7304027a72f40945902e677fb3b6b4551ad3e7bb1827a190590c9f3b6f2211",
+  "sha256": "45b28c637d398cb3166d5d449c80cd7a4754df12bd8cb98c6169556c8949782a",
   "pages": [
     {
       "caption": "BOX OFFICE",
@@ -25,7 +25,7 @@
       "caption": "OPENINGS",
       "value": "1",
       "lines": [
-        "Last change: 02:12",
+        "Last change: 02:33",
         "Checks every 60 seconds"
       ]
     }
