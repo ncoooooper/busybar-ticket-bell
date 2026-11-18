@@ -22,7 +22,7 @@ Use the bar when two performances share a ticketing page and only one is yours. 
 
 ## Example from the emulator
 
-An initially disabled button was enabled in the selected section. That added one opening. Starting the companion while a sale is already open shows OPEN immediately, but the initial observation does not count as a new opening. Local HTML ticket page served over HTTP.
+An initially disabled button was enabled in the selected section. That added one opening. Starting the companion while a sale is already open shows OPEN immediately, but the initial observation does not count as a new opening. The recording used a local test page served over HTTP.
 
 ## Set up the source
 
